@@ -27,6 +27,8 @@ syntax region NeobemComment start=/#/ end=/$/
 highlight link BempKeyword Type
 highlight link BempConditional Conditional
 highlight link BempFunctionApplication Function
-highlight link NeobemComment Comment
+
+" I like the italics and light gray works for me.
+highlight NeobemComment cterm=italic ctermfg=8 gui=italic guifg=LightGray
 
 let b:current_syntax = "bemp"
