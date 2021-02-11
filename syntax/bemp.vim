@@ -22,9 +22,11 @@ syntax keyword BempConditional if then else
 syntax match BempFunctionApplication "[a-z][A-Za-z_]*("he=e-1
 
 syntax region String start=/'/ end=/'/
+syntax region NeobemComment start=/#/ end=/$/
 
 highlight link BempKeyword Type
 highlight link BempConditional Conditional
 highlight link BempFunctionApplication Function
+highlight link NeobemComment Comment
 
 let b:current_syntax = "bemp"
