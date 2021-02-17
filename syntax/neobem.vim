@@ -1,5 +1,5 @@
 " Vim syntax file
-" Language:	   bemp
+" Language:	   Neobem
 " Maintainer:  Mitchell T. Paulus
 " Last Change: Sunday 2021-01-31
 " Remark:      Superset of idf syntax.
@@ -31,4 +31,4 @@ highlight link BempFunctionApplication Function
 " I like the italics and light gray works for me.
 highlight NeobemComment cterm=italic ctermfg=8 gui=italic guifg=LightGray
 
-let b:current_syntax = "bemp"
+let b:current_syntax = "neobem"
