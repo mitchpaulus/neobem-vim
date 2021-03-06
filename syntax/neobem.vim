@@ -16,7 +16,7 @@ endif
 " include another syntax file
 runtime! syntax/idf.vim
 
-syntax keyword BempKeyword import export print and or return let in as only not
+syntax keyword BempKeyword import print and or return let in as only not
 syntax keyword BempConditional if then else
 
 syntax match BempFunctionApplication "[a-z][A-Za-z_]*("he=e-1
