@@ -21,6 +21,8 @@ syntax iskeyword @,48-57,_,192-255,@-@
 syntax keyword BempKeyword import export print and or return let in as only not
 syntax keyword BempConditional if then else
 
+syntax keyword NeobemBoolean true false
+
 syntax match BempFunctionApplication "[a-z][A-Za-z_]*("he=e-1
 
 syntax region String start=/'/ end=/'/
@@ -29,6 +31,7 @@ syntax region NeobemComment start=/#/ end=/$/
 highlight link BempKeyword Type
 highlight link BempConditional Conditional
 highlight link BempFunctionApplication Function
+highlight link NeobemBoolean Boolean
 
 " I like the italics and light gray works for me.
 highlight NeobemComment cterm=italic ctermfg=8 gui=italic guifg=LightGray
