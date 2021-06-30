@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	   Neobem
 " Maintainer:  Mitchell T. Paulus
-" Last Change: Sunday 2021-01-31
+" Last Change: 2021-06-30
 " Remark:      Superset of idf syntax.
 
 " See 44.12 Portable syntax file layout
@@ -16,7 +16,9 @@ endif
 " include another syntax file
 runtime! syntax/idf.vim
 
-syntax keyword BempKeyword import print and or return let in as only not
+syntax iskeyword @,48-57,_,192-255,@-@
+
+syntax keyword BempKeyword import export print and or return let in as only not
 syntax keyword BempConditional if then else
 
 syntax match BempFunctionApplication "[a-z][A-Za-z_]*("he=e-1
