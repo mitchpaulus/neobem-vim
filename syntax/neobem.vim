@@ -18,7 +18,7 @@ runtime! syntax/idf.vim
 
 syntax iskeyword @,48-57,_,192-255,@-@
 
-syntax keyword NeobemKeyword import export print and or return let in as only not
+syntax keyword NeobemKeyword import export print and or return let in as only not log
 syntax keyword NeobemConditional if then else
 syntax keyword NeobemBoolean true false
 
