@@ -27,12 +27,12 @@ syntax match NeobemFunctionApplication "[a-z][A-Za-z_]*("he=e-1
 syntax region String start=/'/ end=/'/
 syntax region NeobemComment start=/#/ end=/$/
 
-highlight link NeobemKeyword Type
-highlight link NeobemConditional Conditional
-highlight link NeobemFunctionApplication Function
-highlight link NeobemBoolean Boolean
+highlight default link NeobemKeyword Type
+highlight default link NeobemConditional Conditional
+highlight default link NeobemFunctionApplication Function
+highlight default link NeobemBoolean Boolean
 
 " I like the italics and light gray works for me.
-highlight NeobemComment cterm=italic ctermfg=8 gui=italic guifg=LightGray
+highlight default NeobemComment cterm=italic ctermfg=8 gui=italic guifg=LightGray
 
 let b:current_syntax = "neobem"
