@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	   Neobem
 " Maintainer:  Mitchell T. Paulus
-" Last Change: 2021-06-30
+" Last Change: 2022-01-28
 " Remark:      Superset of idf syntax.
 
 " See 44.12 Portable syntax file layout
@@ -27,11 +27,15 @@ syntax match NeobemFunctionApplication "[a-z][A-Za-z_]*("he=e-1
 syntax region String start=/'/ end=/'/
 syntax region NeobemComment start=/#/ end=/$/
 
+syntax match BclUuid /\vbcl:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/
+
 highlight default link NeobemKeyword Type
 highlight default link NeobemConditional Conditional
 highlight default link NeobemFunctionApplication Function
 highlight default link NeobemBoolean Boolean
+highlight default link BclUuid Constant
 
+highlight default BclUuid cterm=bold
 " I like the italics and light gray works for me.
 highlight default NeobemComment cterm=italic ctermfg=8 gui=italic guifg=LightGray
 
