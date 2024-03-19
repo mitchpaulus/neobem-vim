@@ -1429,7 +1429,7 @@ syntax keyword NeobemKeyword import export print and or return let in as only no
 syntax keyword NeobemConditional if then else
 syntax keyword NeobemBoolean true false
 
-syntax match NeobemFunctionApplication "[a-z][A-Za-z_]*("he=e-1
+syntax match NeobemFunctionApplication "[a-z][A-Za-z0-9_]*("he=e-1
 
 syntax region String start=/'/ end=/'/
 
